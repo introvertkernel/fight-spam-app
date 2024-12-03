@@ -1,0 +1,132 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Fight Spam - Android App</title>
+    <style>
+        /* Using Material Design 3 colors from colors.xml */
+        :root {
+            --md-primary: #1A73E8;
+            --md-on-primary: #FFFFFF;
+            --md-primary-container: #E8F0FE;
+            --md-on-primary-container: #1967D2;
+            --md-surface: #FFFFFF;
+            --md-on-surface: #202124;
+            --md-surface-variant: #F8F9FA;
+            --md-on-surface-variant: #5F6368;
+        }
+
+        * {
+            margin: 0;
+            padding: 0;
+            box-sizing: border-box;
+            font-family: 'Inter', sans-serif;
+        }
+
+        body {
+            background-color: var(--md-surface);
+            color: var(--md-on-surface);
+            line-height: 1.6;
+        }
+
+        header {
+            background-color: var(--md-primary-container);
+            padding: 4rem 2rem;
+            text-align: center;
+        }
+
+        h1 {
+            color: var(--md-on-primary-container);
+            font-size: 2.5rem;
+            margin-bottom: 1rem;
+        }
+
+        .container {
+            max-width: 1200px;
+            margin: 0 auto;
+            padding: 2rem;
+        }
+
+        .features {
+            display: grid;
+            grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
+            gap: 2rem;
+            margin: 3rem 0;
+        }
+
+        .feature-card {
+            background-color: var(--md-surface-variant);
+            padding: 2rem;
+            border-radius: 12px;
+            text-align: center;
+        }
+
+        .feature-card h3 {
+            color: var(--md-primary);
+            margin-bottom: 1rem;
+        }
+
+        .cta-button {
+            display: inline-block;
+            background-color: var(--md-primary);
+            color: var(--md-on-primary);
+            padding: 1rem 2rem;
+            border-radius: 24px;
+            text-decoration: none;
+            font-weight: 500;
+            margin-top: 1rem;
+            transition: opacity 0.2s;
+        }
+
+        .cta-button:hover {
+            opacity: 0.9;
+        }
+
+        footer {
+            background-color: var(--md-surface-variant);
+            color: var(--md-on-surface-variant);
+            text-align: center;
+            padding: 2rem;
+            margin-top: 4rem;
+        }
+    </style>
+</head>
+<body>
+    <header>
+        <h1>Fight Spam</h1>
+        <p>Don't just block spam—fight it!</p>
+        <a href="#download" class="cta-button">Download App</a>
+    </header>
+
+    <div class="container">
+        <div class="features">
+            <div class="feature-card">
+                <h3>SMS Protection</h3>
+                <p>Filter and report unwanted SMS messages to TRAI for disciplinary action against spammers.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Call Protection</h3>
+                <p>Identify and report unwanted calls (UCC) to help combat telemarketers using new numbers.</p>
+            </div>
+            <div class="feature-card">
+                <h3>Smart Filtering</h3>
+                <p>Optional contact access to filter out messages and calls from known contacts, focusing on potential spam.</p>
+            </div>
+        </div>
+
+        <div style="text-align: center; margin: 4rem 0;">
+            <h2>Why Fight Spam?</h2>
+            <p style="max-width: 800px; margin: 1rem auto;">
+                Blocking only lets telemarketers switch to new numbers. Instead, report unwanted SMS or calls (UCC) to TRAI. 
+                If the message isn't transactional and you haven't subscribed to marketing communications, 
+                TRAI ensures disciplinary action is taken against the sender. Take control today!
+            </p>
+        </div>
+    </div>
+
+    <footer>
+        <p>&copy; 2024 Fight Spam App. All rights reserved.</p>
+    </footer>
+</body>
+</html>
